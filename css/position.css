@@ -1,0 +1,262 @@
+
+/* --------------------------------------------------------------------------- planets sizes */
+
+/* --------------------------------------------------------------------------- stretched sizes */
+
+.scale-stretched #sun {
+    font-size: 25em;
+}
+
+.scale-stretched #mercury .planet {
+    font-size: 1.5em;
+}
+
+.scale-stretched #venus .planet {
+    font-size: 3.72em;
+}
+
+.scale-stretched #earth .planet {
+    font-size: 3.92em;
+}
+
+.scale-stretched #earth .moon {
+    font-size: 1.2em;
+}
+
+.scale-stretched #mars .planet {
+    font-size: 2.9em;
+}
+
+.scale-stretched #jupiter .planet {
+    font-size: 12em;
+}
+
+.scale-stretched #saturn .planet {
+    font-size: 10.8em;
+}
+
+.scale-stretched #uranus .planet {
+    font-size: 4.68em;
+}
+
+.scale-stretched #neptune .planet {
+    font-size: 4.9em;
+}
+
+/* --------------------------------------------------------------------------- scaled sizes */
+
+/*
+(planets radius * 2) * ratio
+*/
+
+/*$distanceScaleRatio:   0.000075em;*/
+
+/* --------------------------------------------------------------------------- planets distance scale sizes */
+
+.scale-d #sun {
+    font-size: 42.73048em;
+}
+
+.scale-d #mercury .planet {
+    font-size: 0.14634em;
+}
+
+.scale-d #venus .planet {
+    font-size: 0.36306em;
+}
+
+.scale-d #earth .planet {
+    font-size: 0.38226em;
+}
+
+.scale-d #earth .moon {
+    font-size: 0.08226em;
+}
+
+.scale-d #mars .planet {
+    font-size: 0.20334em;
+}
+
+.scale-d #jupiter .planet {
+    font-size: 4.19466em;
+}
+
+.scale-d #saturn .planet {
+    font-size: 3.49392em;
+}
+
+.scale-d #uranus .planet {
+    font-size: 1.52172em;
+}
+
+.scale-d #neptune .planet {
+    font-size: 1.47732em;
+}
+
+/* --------------------------------------------------------------------------- planet size scale sizes */
+
+.scale-s #sun {
+    font-size: 427.3048em;
+}
+
+.scale-s #mercury .planet {
+    font-size: 1.4634em;
+}
+
+.scale-s #venus .planet {
+    font-size: 3.6306em;
+}
+
+.scale-s #earth .planet {
+    font-size: 3.8226em;
+}
+
+.scale-s #earth .moon {
+    font-size: 0.8226em;
+}
+
+.scale-s #mars .planet {
+    font-size: 2.0334em;
+}
+
+.scale-s #jupiter .planet {
+    font-size: 41.9466em;
+}
+
+.scale-s #saturn .planet {
+    font-size: 34.9392em;
+}
+
+.scale-s #uranus .planet {
+    font-size: 15.2172em;
+}
+
+.scale-s #neptune .planet {
+    font-size: 14.7732em;
+}
+
+
+.set-speed #sun dl.infos dd:after {
+    content: '0 km/h';
+}
+
+.set-speed #mercury dl.infos dd:after {
+    content: '170,503 km/h';
+}
+
+.set-speed #venus dl.infos dd:after {
+    content: '126,074 km/h';
+}
+
+.set-speed #earth dl.infos dd:after {
+    content: '107,218 km/h';
+}
+
+.set-speed #mars dl.infos dd:after {
+    content: '86,677 km/h';
+}
+
+.set-speed #jupiter dl.infos dd:after {
+    content: '47,002 km/h';
+}
+
+.set-speed #saturn dl.infos dd:after {
+    content: '34,701 km/h';
+}
+
+.set-speed #uranus dl.infos dd:after {
+    content: '24,477 km/h';
+}
+
+.set-speed #neptune dl.infos dd:after {
+    content: '19,566 km/h';
+}
+
+/* --------------------------------------------------------------------------- size */
+
+.set-size dl.infos dd span:after {
+    content: 'Equatorial Circumference';
+}
+
+.set-size #sun dl.infos dd:after {
+    content: '4,370,005 km';
+}
+
+.set-size #mercury dl.infos dd:after {
+    content: '15,329 km';
+}
+
+.set-size #venus dl.infos dd:after {
+    content: '38,024 km';
+}
+
+.set-size #earth dl.infos dd:after {
+    content: '40,030 km';
+}
+
+.set-size #mars dl.infos dd:after {
+    content: '21,296 km';
+}
+
+.set-size #jupiter dl.infos dd:after {
+    content: '439,263 km';
+}
+
+.set-size #saturn dl.infos dd:after {
+    content: '365,882 km';
+}
+
+.set-size #uranus dl.infos dd:after {
+    content: '159,354 km';
+}
+
+.set-size #neptune dl.infos dd:after {
+    content: '154,704 km';
+}
+
+/* --------------------------------------------------------------------------- distance */
+
+.set-distance dl.infos dd span:after {
+    content: 'From Sun';
+}
+
+.set-distance #sun dl.infos dd span:after {
+    content: 'From Earth';
+}
+
+.set-distance #sun dl.infos dd:after {
+    content: '149,598,262 km';
+}
+
+.set-distance #mercury dl.infos dd:after {
+    content: '57,909,227 km';
+}
+
+.set-distance #venus dl.infos dd:after {
+    content: '108,209,475 km';
+}
+
+.set-distance #earth dl.infos dd:after {
+    content: '149,598,262 km';
+}
+
+.set-distance #mars dl.infos dd:after {
+    content: '227,943,824 km';
+}
+
+.set-distance #jupiter dl.infos dd:after {
+    content: '778,340,821 km';
+}
+
+.set-distance #saturn dl.infos dd:after {
+    content: '1,426,666,422 km';
+}
+
+.set-distance #uranus dl.infos dd:after {
+    content: '2,870,658,186 km';
+}
+
+.set-distance #neptune dl.infos dd:after {
+    content: '4,498,396,441 km';
+}
+

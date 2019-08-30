@@ -1,0 +1,297 @@
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0.01px solid rgba(167, 167, 167, 0.217);
+    border-radius: 100%;
+    transform-style: preserve-3d;
+    animation-name: orbit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.orbit .orbit {
+    animation-name: suborbit;
+}
+@keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes suborbit {
+    0% {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(90deg) rotateZ(-360deg);
+    }
+}
+.zoom-close .orbit, .zoom-close .pos, .zoom-close .planet, .zoom-close .satelite, .zoom-close .ring {
+    animation-play-state: paused!important;
+    animation-duration: 0s!important;
+    animation: none!important;
+}
+/* --------------------------------------------------------------------------- speed */
+
+/* sideral years */
+
+#mercury .pos, #mercury .planet, #mercury.orbit {
+    animation-duration: 2.89016s;
+}
+
+#venus .pos, #venus .planet, #venus.orbit {
+    animation-duration: 7.38237s;
+}
+
+#earth .pos, #earth .planet, #earth.orbit {
+    animation-duration: 12.00021s;
+}
+
+#earth .orbit .pos, #earth .orbit {
+    animation-duration: 0.89764s;
+}
+
+#mars .pos, #mars .planet, #mars.orbit {
+    animation-duration: 22.57017s;
+}
+
+#jupiter .pos, #jupiter .planet, #jupiter.orbit {
+    animation-duration: 142.35138s;
+}
+
+#saturn .pos, #saturn .planet, #saturn.orbit, #saturn .ring {
+    animation-duration: 353.36998s;
+}
+
+#uranus .pos, #uranus .planet, #uranus.orbit {
+    animation-duration: 1008.20215s;
+}
+
+#neptune .pos, #neptune .planet, #neptune.orbit {
+    animation-duration: 1977.49584s;
+}
+
+/* --------------------------------------------------------------------------- stretched orbits */
+
+.scale-stretched #mercury.orbit {
+    width: 32em;
+    height: 32em;
+    margin-top: -16em;
+    margin-left: -16em;
+}
+
+.scale-stretched #venus.orbit {
+    width: 40em;
+    height: 40em;
+    margin-top: -20em;
+    margin-left: -20em;
+}
+
+.scale-stretched #earth.orbit {
+    width: 56em;
+    height: 56em;
+    margin-top: -28em;
+    margin-left: -28em;
+}
+
+.scale-stretched #earth .orbit {
+    width: 6em;
+    height: 6em;
+    margin-top: -3em;
+    margin-left: -3em;
+}
+
+.scale-stretched #mars.orbit {
+    width: 72em;
+    height: 72em;
+    margin-top: -36em;
+    margin-left: -36em;
+}
+
+.scale-stretched #jupiter.orbit {
+    width: 100em;
+    height: 100em;
+    margin-top: -50em;
+    margin-left: -50em;
+}
+
+.scale-stretched #saturn.orbit {
+    width: 150em;
+    height: 150em;
+    margin-top: -75em;
+    margin-left: -75em;
+}
+
+.scale-stretched #uranus.orbit {
+    width: 186em;
+    height: 186em;
+    margin-top: -93em;
+    margin-left: -93em;
+}
+
+.scale-stretched #neptune.orbit {
+    width: 210em;
+    height: 210em;
+    margin-top: -105em;
+    margin-left: -105em;
+}
+
+/* --------------------------------------------------------------------------- scaled orbits */
+
+/* --------------------------------------------------------------------------- distance scale orbits */
+
+.scale-d #mercury.orbit {
+    width: 44.74176em;
+    height: 44.74176em;
+    margin-top: -22.37088em;
+    margin-left: -22.37088em;
+}
+
+.scale-d #venus.orbit {
+    width: 47.35737em;
+    height: 47.35737em;
+    margin-top: -23.67869em;
+    margin-left: -23.67869em;
+}
+
+.scale-d #earth.orbit {
+    width: 49.50959em;
+    height: 49.50959em;
+    margin-top: -24.75479em;
+    margin-left: -24.75479em;
+}
+
+.scale-d #mars.orbit {
+    width: 53.58356em;
+    height: 53.58356em;
+    margin-top: -26.79178em;
+    margin-left: -26.79178em;
+}
+
+.scale-d #jupiter.orbit {
+    width: 82.2042em;
+    height: 82.2042em;
+    margin-top: -41.1021em;
+    margin-left: -41.1021em;
+}
+
+.scale-d #saturn.orbit {
+    width: 115.91713em;
+    height: 115.91713em;
+    margin-top: -57.95857em;
+    margin-left: -57.95857em;
+}
+
+.scale-d #uranus.orbit {
+    width: 191.00471em;
+    height: 191.00471em;
+    margin-top: -95.50235em;
+    margin-left: -95.50235em;
+}
+
+.scale-d #neptune.orbit {
+    width: 275.64709em;
+    height: 275.64709em;
+    margin-top: -137.82355em;
+    margin-left: -137.82355em;
+}
+
+/* Moon */
+
+.scale-d #earth .orbit {
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+
+/* --------------------------------------------------------------------------- size scale orbits */
+
+.scale-s #mercury.orbit {
+    width: 441.3048em;
+    height: 441.3048em;
+    margin-top: -220.6524em;
+    margin-left: -220.6524em;
+}
+
+.scale-s #venus.orbit {
+    width: 457.3048em;
+    height: 457.3048em;
+    margin-top: -228.6524em;
+    margin-left: -228.6524em;
+}
+
+.scale-s #earth.orbit {
+    width: 473.3048em;
+    height: 473.3048em;
+    margin-top: -236.6524em;
+    margin-left: -236.6524em;
+}
+
+.scale-s #mars.orbit {
+    width: 489.3048em;
+    height: 489.3048em;
+    margin-top: -244.6524em;
+    margin-left: -244.6524em;
+}
+
+.scale-s #jupiter.orbit {
+    width: 561.3048em;
+    height: 561.3048em;
+    margin-top: -280.6524em;
+    margin-left: -280.6524em;
+}
+
+.scale-s #saturn.orbit {
+    width: 705.3048em;
+    height: 705.3048em;
+    margin-top: -352.6524em;
+    margin-left: -352.6524em;
+}
+
+.scale-s #uranus.orbit {
+    width: 817.3048em;
+    height: 817.3048em;
+    margin-top: -408.6524em;
+    margin-left: -408.6524em;
+}
+
+.scale-s #neptune.orbit {
+    width: 881.3048em;
+    height: 881.3048em;
+    margin-top: -440.6524em;
+    margin-left: -440.6524em;
+}
+
+/* Moon */
+
+.scale-s #earth .orbit {
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+
+/* --------------------------------------------------------------------------- text infos data */
+
+/* --------------------------------------------------------------------------- speed */
+
+.set-speed dl.infos dd span:after {
+    content: 'Orbit Velocity';
+}
+
+.view-3D .opening #sun, .view-3D .opening .orbit, .view-3D .opening .pos, .view-3D .opening .planet, .view-3D .opening .satelite, .view-3D .opening .ring {
+    transition-duration: 4s;
+}
+mercury #mercury.orbit, .venus #venus.orbit, .earth #earth.orbit, .mars #mars.orbit, .jupiter #jupiter.orbit, .saturn #saturn.orbit, .uranus #uranus.orbit, .neptune #neptune.orbit {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.hide-UI .orbit {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
