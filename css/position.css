@@ -175,7 +175,7 @@
 /* --------------------------------------------------------------------------- size */
 
 .set-size dl.infos dd span:after {
-    content: 'Equatorial Circumference';
+    content: 'Circunferência Equatorial';
 }
 
 .set-size #sun dl.infos dd:after {
@@ -217,11 +217,11 @@
 /* --------------------------------------------------------------------------- distance */
 
 .set-distance dl.infos dd span:after {
-    content: 'From Sun';
+    content: 'do Sol';
 }
 
 .set-distance #sun dl.infos dd span:after {
-    content: 'From Earth';
+    content: 'da Terra';
 }
 
 .set-distance #sun dl.infos dd:after {

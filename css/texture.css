@@ -2,9 +2,9 @@ body {
     background-image: url('src/space.jpg');
 }
 
-#universe {
+/* #universe {
     background-color: rgba(1, 1, 1, 0.925);
-}
+} */
 
 #sun {
     background-image: url('src/sun.png');
@@ -61,33 +61,32 @@ body {
 
 @keyframes shadow-mercury {
     0% {
-        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     25% {
-        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     50% {
-        box-shadow: inset 13px -5px 4px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 13px -5px 4px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     50.01% {
-        box-shadow: inset -13px -5px 4px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -13px -5px 4px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     75% {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     100% {
-        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
 }
-
-.scaled.view-2D #mercury .planet, .scaled.view-3D #mercury .planet {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #mercury .planet {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -104,33 +103,33 @@ body {
 
 @keyframes shadow-venus {
     0% {
-        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     25% {
-        box-shadow: inset 22px -20px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 22px -20px 10px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     25.5% {
-        box-shadow: inset -22px -20px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -22px -20px 10px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     50% {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     75% {
-        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     100% {
-        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
 }
 
-.scaled.view-2D #venus .planet, .scaled.view-3D #venus .planet {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #venus .planet {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -147,33 +146,33 @@ body {
 
 @keyframes shadow-earth {
     0% {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     25% {
-        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     50% {
-        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     75% {
-        box-shadow: inset 24px -20px 15px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 24px -20px 15px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     75.01% {
-        box-shadow: inset -24px -20px 15px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -24px -20px 15px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     100% {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
 }
 
-.scaled.view-2D #earth .planet, .scaled.view-3D #earth .planet {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #earth .planet {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -197,33 +196,33 @@ body {
 
 @keyframes shadow-mars {
     0% {
-        box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     25% {
-        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     50% {
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     75% {
-        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     99.99% {
-        box-shadow: inset 18px -10px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 18px -10px 10px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     100% {
-        box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
 }
 
-.scaled.view-2D #mars .planet, .scaled.view-3D #mars .planet {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #mars .planet {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -240,33 +239,33 @@ body {
 
 @keyframes shadow-jupiter {
     0% {
-        box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -10px 0 5px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     25% {
-        box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     50% {
-        box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 10px 0 5px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     75% {
-        box-shadow: inset 94px -30px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 90px -20px 20px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     75.01% {
-        box-shadow: inset -94px -30px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -90px -20px 20px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     100% {
-        box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -10px 0 5px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
 }
 
-.scaled.view-2D #jupiter .planet, .scaled.view-3D #jupiter .planet {
-    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.7);
+ .scaled.view-3D #jupiter .planet {
+    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -283,33 +282,33 @@ body {
 
 @keyframes shadow-saturn {
     0% {
-        box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 20px 0 10px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     25% {
-        box-shadow: inset 80px -30px 50px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 90px -15px 40px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     25.01% {
-        box-shadow: inset -94px -30px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -94px -15px 30px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     50% {
-        box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -20px 0 10px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     75% {
-        box-shadow: inset -2px 3px 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -2px 3px 2px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     100% {
-        box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 20px 0 10px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
 }
 
-.scaled.view-2D #saturn .planet, .scaled.view-3D #saturn .planet {
-    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #saturn .planet {
+    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -346,7 +345,7 @@ body {
     }
 }
 
-.scaled.view-2D #saturn .ring, .scaled.view-3D #saturn .ring {
+.scaled.view-3D #saturn .ring {
     box-shadow: inset 16px 0 4px rgba(20, 40, 50, 0.6);
 }
 
@@ -363,33 +362,33 @@ body {
 
 @keyframes shadow-uranus {
     0% {
-        box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     25% {
-        box-shadow: inset 40px -15px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 40px -15px 40px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     25.01% {
-        box-shadow: inset -40px -15px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -40px -15px 40px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     50% {
-        box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     75% {
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     100% {
-        box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
 }
 
-.scaled.view-2D #uranus .planet, .scaled.view-3D #uranus .planet {
-    box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #uranus .planet {
+    box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }
 
@@ -406,32 +405,32 @@ body {
 
 @keyframes shadow-neptune {
     0% {
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
     25% {
-        box-shadow: inset 12px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 12px 0 5px rgba(0, 0, 0, 0.8);
         /* LEFT */
     }
     50% {
-        box-shadow: inset 50px -15px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 50px -15px 40px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     50.01% {
-        box-shadow: inset -50px -15px 40px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -50px -15px 40px rgba(0, 0, 0, 0.8);
         /* BOTTOM */
     }
     75% {
-        box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.7);
+        box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.8);
         /* RIGHT */
     }
     100% {
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7);
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8);
         /* TOP */
     }
 }
 
-.scaled.view-2D #neptune .planet, .scaled.view-3D #neptune .planet {
-    box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.7);
+.scaled.view-3D #neptune .planet {
+    box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.8);
     /* RIGHT */
 }

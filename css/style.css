@@ -10,20 +10,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(86, 68, 132, 0.327);
 }
 
 .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 26px 26px;
     text-decoration: none;
 }
 
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
 }
 
@@ -32,28 +33,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 26px 26px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(7, 6, 25);
+    background-color: rgba(18, 16, 61, 0.646);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(18, 16, 61, 0.646);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(86, 68, 132, 0.327);
     z-index: 1;
 }
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -61,7 +62,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(93, 84, 84)115, 115, 115);
 }
 
 .dropdown:hover .dropdown-content {
@@ -71,10 +72,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
-/* body {
-    line-height: 2;
-} */
 
 ol, ul {
     list-style: none;
@@ -108,7 +105,6 @@ body {
 
 #universe {
     z-index: 1;
-    /* position: absolute; */
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -121,7 +117,6 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    /* perspective: 4000; */
 }
 
 #solar-system {
@@ -262,24 +257,6 @@ body {
     box-shadow: 0 0 0 rgba(255, 160, 60, 0);
 }
 
-/* --------------------------------------------------------------------------- 2D view */
-
-/* .view-2D.zoom-large #sun {
-    transform-style: flat;
-}
-
-.view-2D.zoom-large .orbit {
-    transform-style: flat;
-}
-
-.view-2D #sun, .view-2D .ring {
-    transform: rotateX(0deg);
-}
-
-.view-2D .planet, .view-2D .moon {
-    transform: rotateX(90deg);
-} */
-
 /* --------------------------------------------------------------------------- 3D view */
 
 .view-3D.zoom-large #sun {
@@ -312,24 +289,12 @@ body {
     width: 100%;
 }
 
-.zoom-large.view-2D .scale-stretched #solar-system {
-    font-size: 26%;
-}
-
 .zoom-large.view-3D .scale-stretched #solar-system {
     font-size: 62%;
 }
 
-.zoom-large.view-2D .scale-d #solar-system {
-    font-size: 22%;
-}
-
 .zoom-large.view-3D .scale-d #solar-system {
     font-size: 48%;
-}
-
-.zoom-large.view-2D .scale-s #solar-system {
-    font-size: 7%;
 }
 
 .zoom-large.view-3D .scale-s #solar-system {
@@ -351,9 +316,10 @@ body {
     margin-left: -106%;
 }
 
+/* 
 .zoom-close.view-2D .scale-d #solar-system {
     font-size: 84%;
-}
+} */
 
 .zoom-close.view-3D .scale-d #solar-system {
     font-size: 84%;
@@ -363,17 +329,19 @@ body {
     margin-left: -145%;
 }
 
+/* 
 .zoom-close.view-2D .scale-s #solar-system {
     font-size: 40%;
-}
+} */
 
 .zoom-close.view-3D .scale-s #solar-system {
     font-size: 40%;
 }
 
+/* 
 .zoom-close.view-2D .planet, .zoom-close.view-2D .moon {
     transform: rotateX(0deg);
-}
+} */
 
 .zoom-close.view-3D .planet {
     transform: rotateX(-90deg);
@@ -391,7 +359,8 @@ body {
 /* --------------------------------------------------------------------------- DEBUG 
 */
 
-/* .pos, .planet, .orbit, .ring {
+/* 
+.pos, .planet, .orbit, .ring {
     animation-duration: 20s!important;
 } */
 
@@ -416,7 +385,7 @@ dl.infos:before {
     content: '';
     width: 0px;
     height: 100px;
-    left: -10px;
+    left: -1px;
     bottom: 0;
     border-top: 1px solid white;
     border-left: 1px solid white;
