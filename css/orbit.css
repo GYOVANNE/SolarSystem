@@ -3,7 +3,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 0.01px solid rgba(167, 167, 167, 0.217);
+    border: 0.01px solid rgba(137, 131, 182, 0.782);
     border-radius: 100%;
     transform-style: preserve-3d;
     animation-name: orbit;
@@ -288,7 +288,7 @@
 .view-3D .opening #sun, .view-3D .opening .orbit, .view-3D .opening .pos, .view-3D .opening .planet, .view-3D .opening .satelite, .view-3D .opening .ring {
     transition-duration: 4s;
 }
-mercury #mercury.orbit, .venus #venus.orbit, .earth #earth.orbit, .mars #mars.orbit, .jupiter #jupiter.orbit, .saturn #saturn.orbit, .uranus #uranus.orbit, .neptune #neptune.orbit {
+.mercury #mercury.orbit, .venus #venus.orbit, .earth #earth.orbit, .mars #mars.orbit, .jupiter #jupiter.orbit, .saturn #saturn.orbit, .uranus #uranus.orbit, .neptune #neptune.orbit {
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 .hide-UI .orbit {

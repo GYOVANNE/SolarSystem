@@ -8,13 +8,73 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(7, 6, 25);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body {
+/* body {
     line-height: 2;
-}
+} */
 
 ol, ul {
     list-style: none;
@@ -48,7 +108,7 @@ body {
 
 #universe {
     z-index: 1;
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -58,10 +118,10 @@ body {
 }
 
 #galaxy {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
-    /*perspective: 4000;*/
+    /* perspective: 4000; */
 }
 
 #solar-system {
@@ -354,31 +414,31 @@ dl.infos {
 dl.infos:before {
     position: absolute;
     content: '';
-    width: 15px;
-    height: 30px;
-    left: 15px;
+    width: 0px;
+    height: 100px;
+    left: -10px;
     bottom: 0;
     border-top: 1px solid white;
     border-left: 1px solid white;
     transform-style: preserve-3d;
-    transform: skew(-45deg, 0deg);
+    transform: skew(-0deg, 0deg);
     box-shadow: inset 1px 1px black;
 }
 
 dl.infos dt {
     position: absolute;
-    left: 50px;
-    margin-bottom: 26px;
+    left: -80px;
+    margin-bottom: 130px;
     bottom: 30px;
     color: #FFF;
-    font-size: 14px;
+    font-size: 30px;
     text-shadow: 1px 1px 2px black;
 }
 
 dl.infos dd:after {
     position: absolute;
-    left: 50px;
-    bottom: 30px;
+    left: -80px;
+    bottom: 130px;
     width: 300px;
     color: #FFF;
     font-size: 22px;
@@ -387,11 +447,11 @@ dl.infos dd:after {
 
 dl.infos dd span:after {
     position: absolute;
-    left: 50px;
-    bottom: 14px;
+    left: -80px;
+    bottom: 114px;
     width: 300px;
     color: #FFF;
-    font-size: 11px;
+    font-size: 15px;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -401,13 +461,9 @@ dl.infos dd span:after {
     transform: rotateX(0deg);
 }
 
-.hide-UI h1, .hide-UI #data, .hide-UI dl.infos, .hide-UI #controls {
+.hide-UI h1, .hide-UI .hide-UI dl.infos, .hide-UI #controls {
     opacity: 0!important;
     margin-top: -30px;
-}
-
-.hide-UI #data {
-    margin-bottom: -30px;
 }
 
 h1 {
@@ -428,10 +484,6 @@ h1 span, #navbar h1 a {
     color: rgba(255, 255, 255, 0.5);
 }
 
-#navbar, #controls, #data {
-    background: rgba(0, 0, 0, 0.4);
-}
-
 #navbar {
     z-index: 99;
     position: absolute;
@@ -441,21 +493,6 @@ h1 span, #navbar h1 a {
     width: 100%;
     height: 48px;
 }
-
-#navbar a, #data a, #controls label {
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-    position: relative;
-    text-decoration: none;
-}
-
-#navbar a:hover, #data a:hover, #controls label:hover {
-    color: #FFF;
-}
-
-/* #data a.active {
-    color: #0CF;
-} */
 
 #navbar a {
     position: absolute;
@@ -469,121 +506,12 @@ h1 span, #navbar h1 a {
     left: 30;
 }
 
-#toggle-controls {
-    right: 0;
-}
-
-#data, #controls {
+#controls {
     z-index: 99;
     position: fixed;
     opacity: 1;
     top: 4px;
     padding: 1px;
-}
-
-.data-close #data {
-    left: -100%;
-}
-
-.data-open #data {
-    left: 0px;
-}
-
-.controls-close #controls {
-    right: -100%;
-}
-
-.controls-open #controls {
-    right: 0px;
-}
-
-#data a {
-    margin-bottom: 1px;
-    padding: 6px 10px;
-    font-size: 18px;
-}
-
-#controls label {
-    opacity: .6;
-    height: 24px;
-    margin-bottom: 28px;
-}
-
-#controls label:hover {
-    opacity: 1;
-}
-
-#controls label:before {
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-top: 3px;
-    text-align: center;
-    color: #FFF;
-    z-index: 99;
-}
-
-#controls label span {
-    display: block;
-    margin-left: 36px;
-    padding-top: 4px;
-    font-size: 18px;
-    color: #FFF;
-}
-
-#controls input {
-    display: block;
-    appearance: none;
-}
-
-#controls input[type="radio"]:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    border: 2px solid #FFF;
-    border-radius: 16px;
-}
-
-#controls input:checked[type="radio"]:after {
-    content: '';
-    display: block;
-    top: 3px;
-    margin-left: 3px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background: #FFF;
-    z-index: 99;
-}
-
-#controls input[type="checkbox"]:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 22px;
-    border: 2px solid #FFF;
-    border-radius: 16px;
-}
-
-#controls input[type="checkbox"]:after {
-    content: '';
-    display: block;
-    top: 3px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background: #FFF;
-    z-index: 99;
-}
-
-#controls label.set-view:before {
-    font: bold small-caps 11px/20px sans-serif;
 }
 
 .view-3D #controls label.set-view:before {
@@ -653,7 +581,7 @@ h1 span, #navbar h1 a {
     transition-delay: 1s;
 }
 
-.opening #solar-system, .opening #sun, .opening .orbit, .opening .pos, .opening .planet, .opening .satelite, .opening .ring, .opening .infos, .opening h1, .opening #data, .opening dl.infos, .opening #controls {
+.opening #solar-system, .opening #sun, .opening .orbit, .opening .pos, .opening .planet, .opening .satelite, .opening .ring, .opening .infos, .opening h1, .opening dl.infos, .opening #controls {
     transition-duration: 0s;
     transition-delay: 0s;
 }
@@ -662,22 +590,8 @@ h1 span, #navbar h1 a {
     transition-delay: 0s;
 }
 
-h1, #data, #controls {
-    transition-property: opacity, margin;
-    transition-duration: .8s;
-    transition-timing-function: ease-in-out;
-}
-
 h1 {
     transition-delay: .35s;
-}
-
-#data {
-    transition-delay: .7s;
-}
-
-#controls {
-    transition-delay: 1s;
 }
 
 /* --------------------------------------------------------------------------- responsive styles */
@@ -716,9 +630,6 @@ h1 {
     #universe {
         font-size: 73%;
     }
-    #navbar, #controls, #data {
-        background: transparent;
-    }
     #navbar a {
         display: none;
     }
@@ -729,22 +640,6 @@ h1 {
     #controls {
         padding-right: 32px;
         top: 12px;
-    }
-    #data {
-        position: fixed;
-        top: inherit;
-        bottom: 0;
-        width: 100%;
-        text-align: right;
-    }
-    #data a {
-        display: inline-block;
-        text-align: right;
-        font-size: 20px;
-        padding: 15px 15px;
-    }
-    .data-open #data, .data-close #data {
-        left: -20px;
     }
     .controls-open #controls, .controls-close #controls {
         right: 0px;
