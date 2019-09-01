@@ -5,41 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/texture.css" type="text/css" rel="stylesheet">
+    <link href="css/position.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/orbit.css" type="text/css" rel="stylesheet">
-    <link href="css/position.css" type="text/css" rel="stylesheet">
 
     <title>Solar System</title>
 </head>
 
-<!-- <body class="opening hide-UI view-2D zoom-large data-close controls-close"> -->
+<body class="opening  hide-UI zoom-large data-close controls-close ">
 
-<body class="opening  hide-UI zoom-large data-close ">
-
-    <div id="data" class="navbar">
-
-        <a class="sun" title="sun" href="#sunspeed">Sol</a></li>
-        <a class="mercury" title="mercury" href="#mercuryspeed">Mercúrio</a>
-        <a class="venus" title="venus" href="#venusspeed">Vênus</a>
-        <a class="earth active" title="earth" href="#earthspeed">Terra</a>
-        <a class="mars" title="mars" href="#marsspeed">Marte</a>
-        <a class="jupiter" title="jupiter" href="#jupiterspeed">Júpiter</a>
-        <a class="saturn" title="saturn" href="#saturnspeed">Saturno</a>
-        <a class="uranus" title="uranus" href="#uranusspeed">Urano</a>
-        <a class="neptune" title="neptune" href="#neptunespeed">Netuno</a>
-        <div class="dropdown">
-            <button class="dropbtn">Perspectiva 
+    <div id="data">
+        <div id="myTopnav" class="topnav">
+            <a class="sun" title="sun" href="#sunspeed">Sol</a>
+            <a class="mercury" title="mercury" href="#mercuryspeed">Mercúrio</a>
+            <a class="venus" title="venus" href="#venusspeed">Vênus</a>
+            <a class="earth active" title="earth" href="#earthspeed">Terra</a>
+            <a class="mars" title="mars" href="#marsspeed">Marte</a>
+            <a class="jupiter" title="jupiter" href="#jupiterspeed">Júpiter</a>
+            <a class="saturn" title="saturn" href="#saturnspeed">Saturno</a>
+            <a class="uranus" title="uranus" href="#uranusspeed">Urano</a>
+            <a class="neptune" title="neptune" href="#neptunespeed">Netuno</a>
+            <div class="dropdown">
+                <button class="dropbtn">Perspectiva 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-              <a class="set-speed" title="set-speed" name="scale">Velocidade</a>
-              <a class="set-size" title="set-speed" name="scale">Tamanho</a>
-              <a class="set-distance" title="set-speed" name="scale">Distância</a>
+                <div class="dropdown-content">
+                    <a class="set-speed" title="set-speed" name="scale">Velocidade</a>
+                    <a class="set-size" title="set-speed" name="scale">Tamanho</a>
+                    <a class="set-distance" title="set-speed" name="scale">Distância</a>
+                </div>
             </div>
-          </div> 
+            <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
     </div>
-
     <div id="universe" class="scale-stretched">
         <div id="galaxy">
             <div id="solar-system" class="earth">
