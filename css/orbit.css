@@ -279,19 +279,3 @@
 
 /* --------------------------------------------------------------------------- text infos data */
 
-/* --------------------------------------------------------------------------- speed */
-
-.set-speed dl.infos dd span:after {
-    content: 'Velocidade da órbita';
-}
-
-.view-3D .opening #sun, .view-3D .opening .orbit, .view-3D .opening .pos, .view-3D .opening .planet, .view-3D .opening .satelite, .view-3D .opening .ring {
-    transition-duration: 4s;
-}
-.mercury #mercury.orbit, .venus #venus.orbit, .earth #earth.orbit, .mars #mars.orbit, .jupiter #jupiter.orbit, .saturn #saturn.orbit, .uranus #uranus.orbit, .neptune #neptune.orbit {
-    border: 1px solid rgba(255, 255, 255, 0.8);
-}
-.hide-UI .orbit {
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-

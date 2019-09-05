@@ -1,85 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -103,7 +23,6 @@ video {
     text-decoration: none;
     font-size: 17px;
 }
-
 
 /* .active {
     background-color: #4CAF50;
@@ -148,8 +67,7 @@ video {
     text-align: left;
 }
 
-.topnav a:hover,
-.dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn {
     background-color: rgba(51, 38, 122, 0.555);
     color: rgb(255, 255, 255);
 }
@@ -164,8 +82,7 @@ video {
 }
 
 @media screen and (max-width: 900px) {
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
     .topnav a.icon {
@@ -201,34 +118,19 @@ video {
     }
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
 
@@ -286,9 +188,7 @@ body {
     animation-timing-function: linear;
 }
 
-#sun,
-.planet,
-#earth .moon {
+#sun, .planet, #earth .moon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -347,7 +247,6 @@ body {
     box-sizing: border-box;
 }
 
-
 /* --------------------------------------------------------------------------- planets index */
 
 #mercury {
@@ -390,7 +289,6 @@ body {
     z-index: 1;
 }
 
-
 /* --------------------------------------------------------------------------- animations */
 
 @keyframes invert {
@@ -402,13 +300,11 @@ body {
     }
 }
 
-
 /* --------------------------------------------------------------------------- opening */
 
 #universe.opening #sun {
     box-shadow: 0 0 0 rgba(255, 160, 60, 0);
 }
-
 
 /* --------------------------------------------------------------------------- 3D view */
 
@@ -432,11 +328,9 @@ body {
     transform: rotateX(90deg);
 }
 
-.view-3D .planet,
-.view-3D .moon {
+.view-3D .planet, .view-3D .moon {
     transform: rotateX(0deg);
 }
-
 
 /* --------------------------------------------------------------------------- large zoom */
 
@@ -456,7 +350,6 @@ body {
     font-size: 14%;
 }
 
-
 /* --------------------------------------------------------------------------- close zoom */
 
 .zoom-close #solar-system {
@@ -472,12 +365,6 @@ body {
     margin-left: -106%;
 }
 
-
-/* 
-.zoom-close.view-2D .scale-d #solar-system {
-    font-size: 84%;
-} */
-
 .zoom-close.view-3D .scale-d #solar-system {
     font-size: 84%;
 }
@@ -486,22 +373,9 @@ body {
     margin-left: -145%;
 }
 
-
-/* 
-.zoom-close.view-2D .scale-s #solar-system {
-    font-size: 40%;
-} */
-
 .zoom-close.view-3D .scale-s #solar-system {
     font-size: 40%;
 }
-
-
-/* 
-.zoom-close.view-2D .planet, .zoom-close.view-2D .moon {
-    transform: rotateX(0deg);
-} */
-
 .zoom-close.view-3D .planet {
     transform: rotateX(-90deg);
 }
@@ -515,16 +389,13 @@ body {
     top: 50%!important;
 }
 
-
 /* --------------------------------------------------------------------------- DEBUG 
 */
-
 
 /* 
 .pos, .planet, .orbit, .ring {
     animation-duration: 20s!important;
 } */
-
 
 /* --------------------------------------------------------------------------- navigation styles */
 
@@ -586,23 +457,13 @@ dl.infos dd span:after {
     text-shadow: 1px 1px 2px black;
 }
 
-.sun #sun .infos,
-.mercury #mercury .infos,
-.venus #venus .infos,
-.earth #earth .infos,
-.mars #mars .infos,
-.jupiter #jupiter .infos,
-.saturn #saturn .infos,
-.uranus #uranus .infos,
-.neptune #neptune .infos {
+.sun #sun .infos, .mercury #mercury .infos, .venus #venus .infos, .earth #earth .infos, .mars #mars .infos, .jupiter #jupiter .infos, .saturn #saturn .infos, .uranus #uranus .infos, .neptune #neptune .infos {
     display: block;
     opacity: 1;
     transform: rotateX(0deg);
 }
 
-.hide-UI h1,
-.hide-UI .hide-UI dl.infos,
-.hide-UI #controls {
+.hide-UI h1, .hide-UI .hide-UI dl.infos, .hide-UI #controls {
     opacity: 0!important;
     margin-top: -30px;
 }
@@ -615,8 +476,7 @@ h1 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-h1 span,
-#navbar h1 a {
+h1 span, #navbar h1 a {
     display: inline;
     position: relative;
     padding: 0;
@@ -696,44 +556,26 @@ h1 span,
     margin-left: 81px;
 }
 
-
 /* --------------------------------------------------------------------------- transitions */
 
 .pos {
     transition-property: top, left;
 }
 
-#solar-system,
-.orbit,
-.planet,
-.satelite,
-.ring {
+#solar-system, .orbit, .planet, .satelite, .ring {
     transition-property: width, height, top, left, margin-left, margin-top, webkit-transform;
 }
 
-#sun,
-.icon {
+#sun, .icon {
     transition-property: width, height, webkit-transform;
 }
 
-#solar-system,
-#sun,
-.orbit,
-.pos,
-.planet,
-.satelite,
-.ring,
-.infos,
-.icon {
+#solar-system, #sun, .orbit, .pos, .planet, .satelite, .ring, .infos, .icon {
     transition-duration: .8s;
     transition-timing-function: ease-in-out;
 }
 
-#solar-system,
-#sun,
-.planet,
-.satelite,
-.ring {
+#solar-system, #sun, .planet, .satelite, .ring {
     transition-delay: 0s;
 }
 
@@ -741,17 +583,7 @@ h1 span,
     transition-delay: 1s;
 }
 
-.opening #solar-system,
-.opening #sun,
-.opening .orbit,
-.opening .pos,
-.opening .planet,
-.opening .satelite,
-.opening .ring,
-.opening .infos,
-.opening h1,
-.opening dl.infos,
-.opening #controls {
+.opening #solar-system, .opening #sun, .opening .orbit, .opening .pos, .opening .planet, .opening .satelite, .opening .ring, .opening .infos, .opening h1, .opening dl.infos, .opening #controls {
     transition-duration: 0s;
     transition-delay: 0s;
 }
@@ -763,7 +595,6 @@ h1 span,
 h1 {
     transition-delay: .35s;
 }
-
 
 /* --------------------------------------------------------------------------- responsive styles */
 
@@ -812,8 +643,7 @@ h1 {
         padding-right: 32px;
         top: 12px;
     }
-    .controls-open #controls,
-    .controls-close #controls {
+    .controls-open #controls, .controls-close #controls {
         right: 0px;
     }
 }
