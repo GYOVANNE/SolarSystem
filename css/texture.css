@@ -1,6 +1,10 @@
 body {
     background-image: url('src/space.jpg');
+    background-repeat: no-repeat;
+    height: auto;
 }
+
+
 
 /* #universe {
     background-color: rgba(1, 1, 1, 0.925);
