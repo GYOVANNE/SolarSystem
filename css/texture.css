@@ -1,8 +1,16 @@
 body {
     background-image: url('src/space.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover ;
+    height: 100%;
 }
+
+@media screen and (max-width: 774px) /* Mobile */ {
+    body {
+      background-size: auto;
+    }
+  }
+
 
 /* #universe {
     background-color: rgba(1, 1, 1, 0.925);
