@@ -9,12 +9,8 @@ body {
     body {
       background-size: auto;
     }
-  }
+}
 
-
-/* #universe {
-    background-color: rgba(1, 1, 1, 0.925);
-} */
 
 #sun {
     background-image: url('src/sun.png');
