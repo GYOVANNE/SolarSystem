@@ -11,7 +11,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .topnav {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 8px 16px 0px rgba(67, 54, 143, 0.712);
 }
 
 .topnav a {
@@ -24,10 +23,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 17px;
 }
 
-/* .active {
-    background-color: #4CAF50;
-    color: white;
-} */
+.active {
+    background-color: #5252523d;
+}
 
 .topnav .icon {
     display: none;
@@ -43,14 +41,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 50px 0 0;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 
 .dropdown-content {
     display: none;
+    padding: 0 2px 0 0;
     position: absolute;
     background-color: #ffffff00;
     min-width: 160px;
@@ -68,8 +67,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: rgba(51, 38, 122, 0.555);
     color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(67, 54, 143);
 }
 
 .dropdown-content a:hover {
